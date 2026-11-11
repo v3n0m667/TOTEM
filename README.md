@@ -45,3 +45,15 @@ La variable solo dura mientras siga abierta esa sesión de PowerShell. La API ad
 - La sincronización web es parcial; el Excel local es la fuente de catálogo instalada.
 - No hay inventario en tiempo real; precios y disponibilidad se confirman en tienda.
 - Para operación continua, usar una cuenta de Windows dedicada y configurar el inicio de la aplicación al encender el equipo.
+
+## Buscador del sommelier
+
+La búsqueda inteligente y las preguntas frecuentes funcionan dentro del equipo, con los datos guardados en `data/catalog.json`; no usan IA externa ni hacen consultas de puntuaciones. Reconocen nombres, bodegas, países, uvas, estilos y presupuestos en español y portugués. También permiten continuar una búsqueda con filtros previos o encontrar vinos de menor precio con uva o estilo coincidente desde una ficha.
+
+Los límites «menos de» son estrictos y «hasta» incluye el importe indicado. Los vinos sin precio no se muestran como opciones para un presupuesto ni participan en los extremos de precio. El catálogo no contiene descriptores suficientes para clasificar de forma fiable suavidad, intensidad o maridajes; cuando se pregunta por ello, la interfaz lo indica y no los atribuye como datos del productor. Para consultas de asado se muestran tintos como punto de partida, explicitando que el catálogo no publica maridajes. Ninguna ficha implica confirmación de stock.
+
+Las preguntas frecuentes son atajos al mismo buscador, no respuestas precargadas. Para ejecutar las pruebas esenciales del motor local:
+
+```powershell
+node --test
+```

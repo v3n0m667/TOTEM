@@ -1,0 +1,183 @@
+:root{--cream:#f4f0e9;--paper:#fffdf9;--ink:#282622;--muted:#77736d;--wine:#702d3d;--wine2:#8d4150;--line:#e5dfd6;--sage:#748071;--shadow:0 16px 50px #49351b14}*{box-sizing:border-box}html,body,#app{width:100%;height:100%;margin:0}body{font-family:'DM Sans',Arial,sans-serif;background:var(--cream);color:var(--ink);overflow:hidden}button,input,select{font:inherit}button{cursor:pointer;color:inherit}#app{display:flex;flex-direction:column}.topbar{height:92px;flex:none;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#f7f4ef}.brand{display:flex;align-items:center;gap:16px}.brandmark{width:56px;height:56px;border-radius:50%;border:1px solid #d6cbc0;display:grid;place-items:center;color:var(--wine);font-family:'Playfair Display';font-size:25px}.brandname{font:600 19px 'Playfair Display';letter-spacing:.02em}.brandname small{display:block;font:500 10px 'DM Sans';letter-spacing:.23em;color:#887c70;margin-top:3px}.top-actions{display:flex;gap:12px}.soft-btn,.primary,.outline,.chip,.nav-btn{min-height:64px;padding:0 28px;border:1px solid var(--line);border-radius:999px;background:var(--paper);font-weight:600;font-size:17px;display:inline-flex;align-items:center;justify-content:center;gap:8px}.soft-btn{min-height:52px;padding:0 20px;font-size:15px}.primary{background:var(--wine);border-color:var(--wine);color:white;min-width:250px;min-height:76px;font-size:19px;box-shadow:0 8px 24px #702d3d28}.primary:hover{background:var(--wine2)}.outline{border-color:#cfc4b8;background:transparent}.screen{flex:1;min-height:0;overflow:auto;padding:32px 4vw 110px}.home{display:grid;grid-template-columns:1.15fr .85fr;gap:5vw;align-items:center;min-height:calc(100% - 32px);max-width:1800px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.23em;font-size:13px;font-weight:700;color:var(--wine);margin:0 0 22px}.hero-title{font:600 clamp(46px,5vw,82px)/1.04 'Playfair Display';letter-spacing:-.025em;margin:0;max-width:790px}.hero-sub{font-size:22px;line-height:1.5;color:#706b64;margin:22px 0 34px}.home-actions{display:flex;gap:16px;flex-wrap:wrap}.categories{display:flex;gap:10px;flex-wrap:wrap;margin-top:35px;max-width:760px}.chip{min-height:52px;padding:0 21px;background:#fbf9f5;font-size:15px}.hero-art{position:relative;height:min(620px,65vh);border-radius:300px 300px 20px 20px;background:linear-gradient(160deg,#e8dccc,#c8b39b);overflow:hidden;display:flex;justify-content:center;align-items:center}.hero-art:before,.hero-art:after{content:'';position:absolute;width:48%;height:55%;border:1px solid #ffffff75;border-radius:50%;transform:rotate(32deg)}.hero-art:after{width:76%;height:80%;transform:rotate(-28deg)}.bottle{position:relative;z-index:1;width:140px;height:430px;background:linear-gradient(90deg,#182d27,#2a4438 22%,#253b32 75%,#14251f);border-radius:34px 34px 22px 22px;box-shadow:16px 20px 24px #473a2b55;transform:rotate(5deg)}.bottle:before{content:'';position:absolute;top:-90px;left:49px;width:42px;height:118px;background:#30483c;border-radius:10px 10px 2px 2px}.bottle:after{content:'SIÑERIZ\A WINE EXPERIENCE';white-space:pre;position:absolute;left:12px;right:12px;top:170px;height:100px;background:#eadbc2;color:#5c3c35;display:grid;place-items:center;text-align:center;font:600 13px/2 'Playfair Display';letter-spacing:.1em}.bottle.b2{position:absolute;width:108px;height:355px;left:18%;bottom:10%;transform:rotate(-14deg) scale(.85);opacity:.92}.bottle.b2:before{left:35px}.bottle.b2:after{font-size:10px;top:140px}.art-caption{position:absolute;bottom:24px;z-index:2;background:#fffdf9dc;padding:14px 22px;border-radius:999px;font-size:14px;color:#665d54}.section-head{display:flex;align-items:end;justify-content:space-between;margin:0 auto 26px;max-width:1800px}.section-head h1{font:600 42px 'Playfair Display';margin:0}.section-head p{color:var(--muted);font-size:17px;margin:7px 0 0}.catalog-tools{display:flex;gap:12px;max-width:1800px;margin:0 auto 24px;align-items:center}.search{height:62px;padding:0 22px;border:1px solid var(--line);border-radius:18px;background:var(--paper);font-size:18px;flex:1;outline:none}.filter{height:62px;padding:0 18px;border:1px solid var(--line);border-radius:18px;background:var(--paper);font-size:16px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;max-width:1800px;margin:auto}.wine-card{min-height:320px;padding:22px;border:1px solid var(--line);border-radius:22px;background:var(--paper);text-align:left;display:flex;gap:18px;align-items:center;box-shadow:var(--shadow);transition:transform .18s}.wine-card:active{transform:scale(.98)}.bottle-thumb{flex:none;width:90px;height:206px;border-radius:25px 25px 15px 15px;background:linear-gradient(90deg,#14251f,#345341,#15251e);position:relative;box-shadow:8px 8px 18px #342a1f33}.bottle-thumb:before{content:'';position:absolute;width:28px;height:50px;top:-37px;left:31px;background:#30483c;border-radius:5px 5px 0 0}.bottle-thumb:after{content:'';position:absolute;top:76px;left:7px;right:7px;height:53px;background:#eaddc7;border:1px solid #d8cbb7}.card-info{min-width:0}.tag{display:inline-block;border-radius:99px;background:#f0e9e2;color:#745b4f;padding:7px 12px;font-size:12px;font-weight:700;letter-spacing:.05em}.wine-card h3{font:600 22px/1.2 'Playfair Display';margin:12px 0 7px}.wine-card p{color:var(--muted);font-size:15px;margin:0 0 12px}.price{font-weight:700;font-size:19px;color:var(--wine)}.price.na{font-weight:500;color:var(--muted);font-size:14px}.bottomnav{position:absolute;bottom:0;left:0;right:0;height:82px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;background:#f7f4efeb;border-top:1px solid var(--line);backdrop-filter:blur(14px)}.nav-btn{min-height:52px;padding:0 22px;background:transparent}.nav-note{color:#898178;font-size:13px}.detail{display:grid;grid-template-columns:.8fr 1.2fr;gap:5vw;max-width:1500px;margin:0 auto;align-items:start}.detail-visual{min-height:600px;border-radius:28px;background:linear-gradient(145deg,#e7dbcb,#c7b29b);display:grid;place-items:center;position:relative;overflow:hidden}.detail-visual .bottle{transform:scale(1.12)}.detail-copy{padding:18px 0}.detail-copy h1{font:600 clamp(42px,4vw,64px)/1.1 'Playfair Display';margin:8px 0}.detail-copy .lead{font-size:21px;color:var(--muted);margin:12px 0 26px}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.fact{background:var(--paper);border:1px solid var(--line);padding:17px;border-radius:15px}.fact small{display:block;color:var(--muted);margin-bottom:7px}.fact b{font-size:17px}.panel{margin-top:22px;padding:21px 24px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}.panel h2{font:600 24px 'Playfair Display';margin:0 0 8px}.panel p{color:#706b64;line-height:1.5;margin:0}.panel a{color:var(--wine);font-weight:700}.wizard{max-width:1200px;margin:3vh auto}.wizard h1{font:600 48px 'Playfair Display';margin:0 0 10px}.wizard>p{font-size:18px;color:var(--muted)}.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:32px 0}.choice{height:118px;border:1px solid var(--line);border-radius:20px;background:var(--paper);font:600 22px 'Playfair Display';box-shadow:var(--shadow)}.choice.selected{border:2px solid var(--wine);background:#f5e9e8;color:var(--wine)}.wizard-actions{display:flex;justify-content:space-between}.admin{max-width:1200px;margin:auto}.admin h1{font:600 44px 'Playfair Display'}.admin-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.status-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}.login{display:flex;gap:12px}.empty{grid-column:1/-1;padding:50px;text-align:center;color:var(--muted);font-size:19px}.toast{position:fixed;top:110px;left:50%;transform:translateX(-50%);background:#332b28;color:white;padding:15px 24px;border-radius:999px;z-index:9}.hidden{display:none!important}@media(max-width:1150px){.grid{grid-template-columns:repeat(2,1fr)}.home{gap:3vw}.hero-art{height:52vh}.topbar{height:78px}}@media(max-width:750px){.home{display:block;padding-top:5vh}.hero-art{display:none}.screen{padding:24px 5vw 105px}.hero-title{font-size:48px}.home-actions{flex-direction:column;align-items:stretch}.primary,.outline{width:100%}.catalog-tools{flex-wrap:wrap}.search{flex-basis:100%}.grid{grid-template-columns:1fr}.wine-card{min-height:220px}.section-head h1{font-size:32px}.detail{grid-template-columns:1fr}.detail-visual{min-height:300px}.detail-visual .bottle{transform:scale(.64)}.choices{grid-template-columns:repeat(2,1fr)}.choice{height:90px;font-size:18px}.bottomnav{height:72px}.nav-note{display:none}.brandname{font-size:16px}.admin-grid{grid-template-columns:1fr}}
+.brandlogo{width:132px;height:52px;object-fit:contain;cursor:pointer}.brandname{font-family:Georgia,serif}.brandname small{font-family:Arial,sans-serif}.hero-bottle{position:relative;z-index:1;max-width:70%;max-height:78%;object-fit:contain;filter:drop-shadow(14px 18px 16px #473a2b55)}.bottle:after{content:''}.wine-thumb{flex:none;width:90px;height:206px;object-fit:contain;background:#f7f4ef;border-radius:12px}.hero-art{background:linear-gradient(160deg,#e8dccc,#c8b39b)}
+.home-screen{display:flex;align-items:center}.home-screen .home{width:100%;grid-template-columns:1fr .8fr;gap:8vw}.home-copy{max-width:780px}.home-copy .hero-title{font-size:clamp(54px,6vw,92px)}.help-primary{min-width:400px;min-height:92px;font-size:25px;justify-content:space-between;padding:0 36px}.simple-link{border:0;background:transparent;color:var(--wine);font-size:18px;font-weight:600;min-height:64px;padding:0 18px}.simple-link:hover{text-decoration:underline}.home-actions{align-items:center;gap:20px}.hero-art{height:min(660px,70vh)}.hero-bottle{max-width:72%;max-height:80%}.wizard{max-width:1120px;margin:6vh auto}.wizard h1{font-size:clamp(44px,5vw,68px)}.wizard>p{font-size:21px}.choices{grid-template-columns:repeat(3,minmax(180px,1fr));gap:16px}.choice{height:100px;font-size:24px;border-radius:18px}.wizard-actions{align-items:center;margin-top:34px}.brandlogo{width:132px;height:52px;object-fit:contain;cursor:pointer}.brandname{font-family:Georgia,serif}.brandname small{font-family:Arial,sans-serif}.bottle:after{content:''}.wine-thumb{flex:none;width:90px;height:206px;object-fit:contain;background:#f7f4ef;border-radius:12px}.bottomnav{justify-content:space-between}.bottomnav .nav-btn{font-size:16px}@media(max-width:900px){.home-screen .home{display:flex;min-height:100%;justify-content:center}.home-copy{width:100%}.home-screen .hero-art{display:none}.help-primary{min-width:0;width:min(100%,520px)}.choices{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.home-copy .hero-title{font-size:48px}.home-actions{align-items:stretch;flex-direction:column}.help-primary{width:100%}.choices{grid-template-columns:1fr}.choice{height:76px}.bottomnav .nav-note{display:none}.bottomnav .nav-btn{padding:0 10px}}
+/* Retrato: objetivo principal del tótem, 1080 × 1920. */
+@media (orientation: portrait) {
+  .topbar{height:clamp(76px,7vh,122px);padding:0 4vw}
+  .brand{gap:12px}.brandlogo{width:clamp(92px,13vw,154px);height:clamp(44px,5vh,70px)}
+  .brandname{font-size:clamp(15px,2vw,22px)}.brandname small{font-size:clamp(9px,1vw,12px)}
+  .soft-btn{min-height:60px;font-size:clamp(15px,1.8vw,20px)}
+  .screen{padding:2vh 4vw calc(100px + env(safe-area-inset-bottom));}
+  .home-screen{overflow:auto;align-items:stretch;padding-top:2vh}
+  .home-screen .home{width:100%;max-width:1040px;min-height:100%;display:flex;flex-direction:column;justify-content:space-evenly;align-items:stretch;gap:2vh}
+  .home-copy{text-align:center;max-width:900px;margin:0 auto}
+  .home-copy .eyebrow{font-size:clamp(12px,1.5vw,17px);margin-bottom:1.6vh}
+  .home-copy .hero-title{font-size:clamp(54px,7.3vw,92px);line-height:1.05;margin:auto}
+  .home-copy .hero-sub{font-size:clamp(20px,2.35vw,29px);margin:1.8vh auto 2.8vh;max-width:760px}
+  .home-actions{flex-direction:column;align-items:center;gap:1vh}
+  .help-primary{width:min(100%,800px);min-height:clamp(84px,9vh,132px);font-size:clamp(23px,3vw,34px);border-radius:22px}
+  .simple-link{min-height:68px;font-size:clamp(17px,2vw,23px)}
+  .home-screen .hero-art{display:flex;width:min(100%,880px);height:min(34vh,660px);min-height:300px;margin:0 auto;border-radius:32px}
+  .hero-bottle{max-width:70%;max-height:82%}.art-caption{font-size:clamp(13px,1.5vw,18px);bottom:14px;padding:11px 18px}
+  .section-head{align-items:center;margin-bottom:2vh}.section-head h1{font-size:clamp(32px,4vw,48px)}
+  .catalog-tools{flex-wrap:wrap;gap:10px;margin-bottom:2vh}
+  .catalog-tools .search{flex:1 1 100%;height:68px;font-size:20px}
+  .catalog-tools .filter{flex:1 1 28%;min-width:0;height:64px;font-size:16px;padding:0 12px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .wine-card{min-height:240px;padding:18px;gap:14px;border-radius:18px}
+  .bottle-thumb,.wine-thumb{width:84px;height:174px}.bottle-thumb:before{left:28px}
+  .wine-card h3{font-size:clamp(18px,2.1vw,25px)}.wine-card p{font-size:14px}
+  .detail{grid-template-columns:1fr;gap:1vh;max-width:980px}
+  .detail-visual{height:32vh;min-height:320px;max-height:620px;border-radius:24px}
+  .detail-visual .bottle{transform:scale(.72)}
+  .detail-copy{padding:1vh 0}.detail-copy h1{font-size:clamp(38px,5vw,58px)}
+  .detail-copy .lead{font-size:19px;margin:8px 0 16px}
+  .facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.fact{padding:13px}.fact b{font-size:16px}
+  .panel{padding:18px 20px;margin-top:14px}.panel h2{font-size:23px}
+  .wizard{max-width:980px;margin:5vh auto}.wizard h1{font-size:clamp(42px,5.4vw,66px)}
+  .wizard>p{font-size:clamp(19px,2.1vw,24px)}
+  .choices{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:3vh 0}
+  .choice{height:clamp(88px,10vh,132px);font-size:clamp(20px,2.5vw,28px)}
+  .wizard-actions{gap:12px}.wizard-actions .primary,.wizard-actions .outline{min-height:76px}
+  .bottomnav{height:clamp(76px,8vh,106px);padding:0 3vw calc(env(safe-area-inset-bottom));}
+  .bottomnav .nav-btn{min-height:60px;font-size:clamp(14px,1.7vw,19px);padding:0 14px}
+  .nav-note{font-size:13px}
+  
+  .admin-grid{grid-template-columns:1fr}
+}
+@media (orientation: portrait) and (max-width: 750px) {
+  .home-screen .home{justify-content:center;gap:3vh}.home-screen .hero-art{height:26vh;min-height:210px}
+  .home-copy .hero-title{font-size:clamp(40px,10vw,58px)}
+  .grid{grid-template-columns:1fr}.wine-card{min-height:210px}
+  .catalog-tools .filter{flex-basis:45%}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .choices{grid-template-columns:1fr}.choice{height:76px}
+  .bottomnav .nav-note{display:none}.bottomnav .nav-btn{padding:0 10px}
+  
+}
+/* Premium wine palette and a restrained, tactile home carousel. */
+:root{--cream:#f5efec;--paper:#fffaf7;--ink:#351c25;--muted:#806c72;--wine:#571b2d;--wine2:#783047;--line:#e3d5d8;--sage:#7a6970;--shadow:0 18px 50px #3e102014}
+body{background:var(--cream);color:var(--ink)}
+.topbar{background:#f7f1ed;border-bottom-color:#e6dadd}.brandname{color:#4b1a2a}.brandname small{color:#8a6c76}
+.home-screen{background:radial-gradient(ellipse at 50% 37%,#702f43 0,#581d30 55%,#421426 100%);color:#fbf4f0}
+.home-copy .eyebrow{color:#dfbdc4;letter-spacing:.24em}.home-copy .hero-title{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.035em}.home-copy .hero-sub{color:#e2ced2}
+.home-actions{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:6px;margin:0 auto;width:min(100%,800px)}
+.help-primary{background:#f6e9e2;color:#571b2d;border:1px solid #f6e9e2;box-shadow:0 12px 34px #26071338;border-radius:20px}
+.help-primary:hover{background:#fff7f1}.home-screen .simple-link{color:#f3dfe2}
+.hero-art{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid #a9707f;border-radius:32px;background:radial-gradient(ellipse at 50% 42%,#8d5967 0,#713749 54%,#542033 100%);box-shadow:0 22px 60px #21071140}
+.hero-art:before{content:'';position:absolute;width:66%;height:88%;left:17%;top:5%;border:1px solid #ffffff20;border-radius:50%;z-index:-1}
+.slide-product{position:absolute;top:5%;bottom:24%;left:30%;width:40%;padding:10px;border:0;border-radius:20px;background:#f8f3ed;box-shadow:0 16px 35px #23071342;overflow:hidden}
+.slide-product:active{transform:scale(.98)}.hero-bottle{width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;mix-blend-mode:multiply;filter:none}
+.slide-info{position:absolute;left:15%;right:15%;bottom:13%;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;color:#fff6f0}
+.slide-info span{font-size:clamp(12px,1.3vw,16px);letter-spacing:.16em;text-transform:uppercase;color:#e6cbd1}
+.slide-info strong{font:500 clamp(20px,2.3vw,30px)/1.1 Georgia,'Times New Roman',serif}
+.slide-info b{font-size:clamp(15px,1.5vw,18px);color:#f0d9d9}
+.slide-arrow{position:absolute;z-index:2;top:43%;width:58px;height:58px;border:1px solid #ffffff65;border-radius:50%;background:#41142470;color:#fff8f4;font:300 38px/1 Georgia,serif;display:grid;place-items:center;backdrop-filter:blur(8px)}
+.slide-prev{left:16px}.slide-next{right:16px}.slide-dots{position:absolute;bottom:5%;left:0;right:0;display:flex;justify-content:center;gap:10px;z-index:2}
+.slide-dot{width:9px;height:9px;min-width:9px;min-height:9px;padding:0;border:0;border-radius:999px;background:#e2c5cc8c}.slide-dot.active{width:27px;background:#fff5ef}
+.wine-card{background:var(--paper);border-color:#e8dcde;box-shadow:0 9px 25px #4314240b}.wine-card:active{transform:scale(.985)}
+.tag{background:#f1e4e7;color:#65243a}.primary{background:var(--wine);border-color:var(--wine)}.primary:hover{background:var(--wine2)}
+.choice{background:#fffaf7;border-color:#e7d9dc;color:#47232f;box-shadow:0 8px 24px #3e10200c}.choice.selected{background:#5b1d30;color:#fff7f2;border-color:#5b1d30}
+.bottomnav{background:#451627;color:#f8efec;border-top-color:#744253}.bottomnav .nav-btn{color:#fbf3ef}.bottomnav .nav-note{color:#dfcbd0}.bottomnav .nav-btn:hover{background:#ffffff12}
+.panel{border-color:#e6dade}.fact{border-color:#e8dcde}
+/* Portrait composition, designed for the vertical kiosk. */
+@media (orientation:portrait){
+ .home-screen .home{justify-content:space-around;gap:2vh;padding:1vh 0}
+ .home-copy{max-width:920px}.home-copy .hero-title{font-size:clamp(58px,7.4vw,96px);line-height:1.04}
+ .home-copy .hero-sub{font-size:clamp(19px,2.2vw,27px);margin:1.4vh auto 0}
+ .home-screen .hero-art{width:min(100%,880px);height:min(40vh,740px);min-height:440px;margin:0 auto}
+ .help-primary{min-height:clamp(88px,9vh,132px);font-size:clamp(25px,3vw,35px)}
+ .home-actions{gap:0}.home-actions .simple-link{min-height:55px}
+ .slide-product{top:4%;bottom:24%;left:31%;width:38%;padding:12px;border-radius:22px}
+ .slide-info{bottom:12%;gap:7px}.slide-prev{left:3%}.slide-next{right:3%}
+ .slide-arrow{width:62px;height:62px}
+ .bottomnav{background:#451627;color:#f8efec}
+}
+@media (orientation:portrait) and (max-width:750px){
+ .home-screen .home{gap:2vh}.home-copy .hero-title{font-size:clamp(43px,10vw,60px)}
+ .home-screen .hero-art{height:32vh;min-height:260px}.slide-product{left:30%;width:40%;padding:7px;bottom:25%}
+ .slide-arrow{width:48px;height:48px;font-size:32px}.slide-info{left:9%;right:9%;bottom:12%}
+ .slide-info strong{font-size:19px}.slide-info span{font-size:11px}
+}
+/* Rounded controls and clearly visible focus/contrast states. */
+button{border-radius:999px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:4px solid #d69aa8;outline-offset:4px}
+.primary,.outline,.soft-btn,.chip,.nav-btn{border-radius:999px}
+.outline{background:#fffaf7;color:#571b2d;border:2px solid #571b2d}
+.soft-btn{background:#fffaf7;color:#571b2d;border:1px solid #8c5262}
+.help-primary{border-radius:999px;min-height:clamp(88px,9vh,132px);padding:8px 14px 8px 34px}
+.cta-icon{width:58px;height:58px;flex:none;display:grid;place-items:center;border-radius:50%;background:#571b2d;color:#fff8f4;font-size:30px}
+.home-actions .simple-link{border:1px solid #e9d0d6;border-radius:999px;padding:0 26px;min-height:58px;color:#fff5f2}
+.slide-kicker{position:absolute;z-index:2;top:4%;left:50%;transform:translateX(-50%);padding:10px 18px;border:1px solid #e9cbd2;border-radius:999px;background:#4e1a2c;color:#fff6f2;font-size:12px;font-weight:700;letter-spacing:.17em;white-space:nowrap}
+.slide-product{top:11%;bottom:auto;left:50%;transform:translateX(-50%);width:min(56%,460px);height:auto;aspect-ratio:1;border-radius:50%;padding:16px;background:#fbf6f0;border:2px solid #f0dfe0;box-shadow:0 18px 42px #1e071242}
+.slide-product:active{transform:translateX(-50%) scale(.98)}
+.slide-info{bottom:9%;left:12%;right:12%;gap:8px}
+.slide-info span{color:#f4dce2}.slide-info strong{color:#fff8f4}.slide-info b{color:#f7e8e9}
+.slide-progress-label{border-radius:999px}
+.wine-card{border-radius:28px}.wine-thumb{border-radius:24px}.bottle-thumb{border-radius:30px 30px 22px 22px}
+.tag,.filter,.search{border-radius:999px}
+.choice{border-radius:999px;min-height:84px;border-width:2px}.choice.selected{border-color:#5b1d30}
+.bottomnav .nav-btn{min-height:68px;padding:7px 18px;border:1px solid #b98796;border-radius:999px;color:#fff8f4;background:#542033;gap:10px;font-weight:600}
+.bottomnav .nav-btn:hover{background:#713047}
+.nav-icon{width:46px;height:46px;flex:none;display:grid;place-items:center;border:1px solid #e0b9c3;border-radius:50%;background:#713047;color:#fff8f4;font-size:23px}
+@media (orientation:portrait){
+ .slide-product{top:11%;left:50%;bottom:auto;width:min(58%,490px);height:auto;aspect-ratio:1}
+ .home-actions .simple-link{min-height:64px}
+ .bottomnav .nav-btn{min-height:70px;padding:6px 16px}
+ .nav-icon{width:48px;height:48px}
+}
+@media (orientation:portrait) and (max-width:750px){
+ .slide-product{top:12%;left:50%;bottom:auto;width:min(58%,280px);height:auto;aspect-ratio:1}
+ .help-primary{padding-left:22px}.cta-icon{width:48px;height:48px;font-size:25px}
+ .bottomnav .nav-btn{min-height:64px;padding:5px 10px;gap:6px}.nav-icon{width:42px;height:42px}
+ .choice{min-height:72px}
+}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* Kiosk portrait canvas: native 1080×1920, scaled down only when the display is smaller. */
+html,body{width:100%;height:100%;min-height:100%;margin:0}
+body{height:100dvh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#32101d}
+#app{width:min(100vw,1080px);height:min(100dvh,1920px);max-width:1080px;max-height:1920px;flex:none;overflow:hidden}
+/* Make both lower home actions and persistent navigation unmistakable at a glance. */
+.home-actions .simple-link{min-height:76px;padding:0 32px;background:#fffaf7;color:#4b1426;border:2px solid #fffaf7;box-shadow:0 8px 24px #21071155;font-size:clamp(19px,2vw,24px);font-weight:700}
+.home-actions .simple-link:active{background:#f1dfe2;transform:scale(.98)}
+.bottomnav{background:#32101d;color:#fff8f4;border-top:1px solid #875264}
+.bottomnav .nav-btn{min-height:72px;padding:7px 22px;background:#fffaf7;color:#4b1426;border:2px solid #fffaf7;box-shadow:0 5px 16px #16050c55;font-weight:700}
+.bottomnav .nav-btn:active{background:#f1dfe2;transform:scale(.97)}
+.bottomnav .nav-icon{background:#571b2d;color:#fffaf7;border:1px solid #571b2d}
+@media(max-width:750px){#app{width:100vw;height:100dvh}.bottomnav .nav-btn{padding:5px 12px}}
+/* High-contrast actions and a fully contained bottle on the product sheet. */
+body #app .home-screen .home-actions>.help-primary{background:#fffaf7;color:#451426;border:3px solid #fffaf7;box-shadow:0 12px 34px #17040c80}
+body #app .home-screen .home-actions>.help-primary:active{background:#f1dfe2;color:#35101d}
+body #app .home-screen .home-actions>.help-primary .cta-icon{background:#571b2d;color:#fffaf7;border:2px solid #571b2d}
+.screen:not(.home-screen){background:#f7f1ed;color:#351c25}
+.detail{align-items:start}
+.detail-visual{height:clamp(520px,38vh,760px);min-height:0;padding:18px;background:linear-gradient(145deg,#e7dbcb,#c7b29b)}
+.detail-visual>img{display:block;width:auto;height:92%;max-width:92%;max-height:92%;object-fit:contain;object-position:center}
+
+
+.panel h2{color:#451426}.panel{border-color:#dfcbd0;box-shadow:0 8px 24px #3812200d}
+@media(orientation:portrait){.detail-visual{height:clamp(520px,38vh,760px)}}
+@media(max-width:750px){.detail-visual{height:36vh;min-height:280px;padding:10px}}
+
+
+
+
+/* Larger persistent touch navigation, designed around the 1080×1920 kiosk. */
+.bottomnav{height:clamp(104px,8vh,152px);padding:8px 3vw calc(8px + env(safe-area-inset-bottom));gap:18px}
+.bottomnav .nav-btn{min-width:170px;min-height:88px;padding:10px 24px;font-size:20px;gap:14px}
+.bottomnav .nav-icon{width:58px;height:58px;font-size:28px}
+.brand{gap:14px}.brand-seal{width:54px;height:54px;flex:none;object-fit:contain;border-radius:50%}.brand-wordmark{width:230px;height:62px;object-fit:cover;object-position:center 52%}
+@media(max-width:750px){.bottomnav{height:92px;gap:8px;padding:6px 10px}.bottomnav .nav-btn{min-width:0;min-height:72px;padding:6px 12px;font-size:15px;gap:7px}.bottomnav .nav-icon{width:44px;height:44px;font-size:23px}.brand{gap:8px}.brand-seal{width:42px;height:42px}.brand-wordmark{width:150px;height:46px}}
+/* Emphasize the wine price in the product sheet. */
+.price-panel{border:2px solid #d8b9c2;background:linear-gradient(135deg,#fffaf7,#f4e7e8);padding:24px 28px;box-shadow:0 12px 28px #571b2d18}
+.price-panel h2{font-size:21px;margin:0 0 4px;color:#571b2d}
+.wine-price{margin:0!important;color:#571b2d!important;font:700 clamp(42px,5vw,68px)/1.05 Georgia,'Times New Roman',serif!important;letter-spacing:-.025em}
+.price-note{margin:8px 0 0!important;color:#66545a!important;font-size:16px}
+@media(max-width:750px){.price-panel{padding:18px 20px}.wine-price{font-size:clamp(38px,9vw,54px)!important}.price-note{font-size:14px}}
+/* Smooth, brief bottle and caption transitions on each automatic home slide. */
+@keyframes bottleArrives{0%{opacity:0;transform:translateY(28px) scale(.94);filter:blur(3px)}65%{opacity:1;transform:translateY(-3px) scale(1.01);filter:blur(0)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes captionArrives{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.hero-bottle{animation:bottleArrives 850ms cubic-bezier(.2,.75,.25,1) both}
+.slide-info{animation:captionArrives 650ms ease-out both}
+
+@media(max-width:1250px){.catalog-tools{flex-wrap:wrap}.catalog-tools .search{flex:1 1 100%}.catalog-tools .filter{flex:1 1 20%;min-width:150px}}
+@media(max-width:750px){.catalog-tools .filter{min-width:calc(50% - 8px);font-size:14px}}
